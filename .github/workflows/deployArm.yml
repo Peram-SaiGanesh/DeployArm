@@ -18,7 +18,7 @@ jobs:
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: ${{ secrets.AZURE_RG }}
+        resourceGroupName: GanaRG
         template: ./done.json
         #parameters: 'storagePrefix=mystore storageSKU=Standard_LRS'
         failOnStdErr: false
